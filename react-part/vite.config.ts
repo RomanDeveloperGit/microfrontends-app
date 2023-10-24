@@ -3,6 +3,14 @@ import react from '@vitejs/plugin-react-swc';
 
 export default defineConfig({
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: 'index.js',
+      },
+    },
+    outDir: 'dist',
+  },
   server: {
     port: 3001,
   },
