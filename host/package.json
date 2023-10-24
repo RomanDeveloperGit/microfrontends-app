@@ -7,11 +7,10 @@
     "react:build": "cd ../react-part && npm run build && cd ../host",
     "solid:build": "cd ../solid-part && npm run build && cd ../host",
     "microfrontends:build": "npm run react:build && npm run solid:build",
-    "host:dev": "vite",
     "host:build": "tsc && vite build",
     "host:preview": "vite preview",
-    "common:build": "npm run microfrontends:build && npm run host:build",
-    "common:build-and-preview": "npm run common:build && npm run host:preview"
+    "app:build": "npm run microfrontends:build && npm run host:build",
+    "app:build-and-preview": "npm run app:build && npm run host:preview"
   },
   "devDependencies": {
     "typescript": "^4.9.3",
