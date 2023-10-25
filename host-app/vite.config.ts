@@ -30,9 +30,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        host: './src/index.ts',
-        'react-part': '../react-part/dist/index.js',
-        'solid-part': '../solid-part/dist/index.js',
+        'host-app': './src/index.ts',
+        'react-app': '../react-app/dist/index.js',
+        'solid-app': '../solid-app/dist/index.js',
       },
       output: {
         entryFileNames: '[name].chunk.[hash].js',

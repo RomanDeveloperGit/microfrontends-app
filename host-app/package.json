@@ -1,11 +1,11 @@
 {
-  "name": "host",
+  "name": "host-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "react:build": "cd ../react-part && npm run build && cd ../host",
-    "solid:build": "cd ../solid-part && npm run build && cd ../host",
+    "react:build": "cd ../react-app && npm run build && cd ../host-app",
+    "solid:build": "cd ../solid-app && npm run build && cd ../host-app",
     "microfrontends:build": "npm run react:build && npm run solid:build",
     "host:build": "tsc && vite build",
     "host:preview": "vite preview",
