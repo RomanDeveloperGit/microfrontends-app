@@ -1,3 +1,7 @@
 export const App = () => {
-  return <div>Solid App</div>;
+  return (
+    <div>
+      <h1>Solid App</h1>
+    </div>
+  );
 };
