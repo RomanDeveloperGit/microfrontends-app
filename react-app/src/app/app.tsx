@@ -10,7 +10,7 @@ export const App = () => {
 
     window.appEventTarget.dispatchEvent(
       new CustomEvent('message-to-solid', {
-        detail: message || 'Пустое сообщение',
+        detail: message,
       }),
     );
   };
