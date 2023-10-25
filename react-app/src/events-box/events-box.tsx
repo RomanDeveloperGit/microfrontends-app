@@ -5,7 +5,7 @@ export const EventsBox = () => {
 
   useEffect(() => {
     const handler = (event: Event | CustomEvent) => {
-      if (!('detail' in event))
+      if (!('detail' in event) || !event.detail)
         throw new Error('Укажите свойство detail в string-формате.');
 
       setMessages((messages) => [
