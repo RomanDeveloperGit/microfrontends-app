@@ -1,3 +1,3 @@
 interface Window {
-  test: string;
+  appEventTarget: import('./events').AppEventTarget;
 }
